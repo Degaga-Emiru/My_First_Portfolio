@@ -1,1 +1,196 @@
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+
+
+}
+
+header, footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 1rem;
+  
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: #f39c12;
+}
+
+
+.navbar ul {
+    background: #007bff;
+    list-style: none;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; 
+  margin: 1rem;
+}
+
+
+article {
+  flex: 2; 
+  padding: 1rem;
+  overflow-y: auto; 
+  background-color: #e6f7ff;
+  background: linear-gradient(to right, #e6f7ff, #ffffff);
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.2rem;
+}
+
+article p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+article a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+article a:hover {
+    background: #0056b3;
+}
+
+
+
+aside {
+  flex: 1; 
+  padding: 1rem;
+  overflow-y: auto; 
+  background-color: #f9f9f9;
+}
+
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #333;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.navbar ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+
+section {
+  margin: 1rem 0;
+}
+
+section h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.project {
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  color: #007bff;
+}
+
+.project a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degaga Emiru - Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            background-color: #333;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ffdd57; /* Hover color */
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        section h2 {
+            color: #007BFF;
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: 600;
+            animation: slideInLeft 1s ease-in-out;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Project Styles */
+        .project {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            color: #007BFF;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Contact Section Styles */
+        #contact a {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .navbar ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                margin: 10px;
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Degaga Emiru</h1>
+        <p>Degaga is an aspiring full-stack web developer from Ethiopia, skilled in frontend technologies like HTML, CSS, JavaScript, React, and exploring Figma design.</p>
+    </header>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hello! I'm Degaga, an aspiring web developer from Ethiopia, passionate about creating engaging and responsive web designs. I specialize in frontend technologies like HTML, CSS, JavaScript, and React.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <article class="project">
+            <h3>Library Management System</h3>
+            <p>A robust library management system built using C++ for managing book inventories, member records, and borrowing activities.</p>
+            <a href="https://github.com/yourusername/library-management-system" target="_blank">View Project</a>
+        </article>
+        <article class="project">
+            <h3>Weather Dashboard</h3>
+            <p>An interactive Python-based application that provides real-time weather updates for various locations.</p>
+            <a href="https://github.com/yourusername/weather-dashboard" target="_blank">View Project</a>
+        </article>
+        <article class="project">
+            <h3>Work Jobs Platform</h3>
+            <p>A Java-powered platform that connects job seekers with employers, offering a streamlined job application process.</p>
+            <a href="https://github.com/yourusername/work-jobs-platform" target="_blank">View Project</a>
+        </article>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an enthusiastic frontend web developer with a passion for building visually appealing and user-friendly websites. My skills include HTML, CSS, JavaScript, and React. In addition to web development, I enjoy exploring design tools like Figma to create engaging UI/UX designs. Outside of coding, I enjoy reading tech blogs, participating in hackathons, and learning about the latest advancements in web technology.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn and GitHub:</p>
+        <a href="mailto:degagaemiru@gmail.com">Email Me</a><br>
+        <a href="https://www.linkedin.com/in/degaga-emiru96/" target="_blank">LinkedIn</a><br>
+        <a href="https://github.com/Degaga-Emiru/" target="_blank">GitHub</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Degaga Emiru</p>
+    </footer>
+</body>
+</html>

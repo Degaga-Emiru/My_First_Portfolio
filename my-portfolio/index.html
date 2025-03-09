@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+  <header>
+    <!-- Hidden checkbox to control menu visibility -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <!-- Label for the checkbox (acts as the menu button) -->
+    <label for="menu-toggle" class="menu-button" aria-label="Toggle Menu">&#9776;</label>
+    <!-- Navigation menu -->
+    <nav class="nav-menu">
+      <!-- Close button (also a label for the checkbox) -->
+      <label for="menu-toggle" class="close-btn" aria-label="Close Menu">&times;</label>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio Website</h1>
+      <p>Discover the world of creativity and innovation.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+  <!-- Services Section -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <p class="services-intro">We offer a wide range of services to help you grow your business and achieve your goals. Explore our offerings below.</p>
+  <div class="service-cards">
+    <!-- Web Design Card -->
+    <div class="card">
+      <img src="images/web-design.jpg" alt="Web Design" class="card-image">
+      <div class="card-content">
+        <h3>Web Design</h3>
+        <p>We create stunning and responsive websites tailored to your needs. Our designs are modern, user-friendly, and optimized for all devices.</p>
+        <ul>
+          <li>Custom Website Design</li>
+          <li>Responsive Layouts</li>
+          <li>UI/UX Optimization</li>
+        </ul>
+        <a href="#" class="card-button">Learn More</a>
+      </div>
+    </div>
+
+    <!-- SEO Optimization Card -->
+    <div class="card">
+      <img src="images/SEO.jpg" alt="SEO Optimization" class="card-image">
+      <div class="card-content">
+        <h3>SEO Optimization</h3>
+        <p>Boost your online presence with our expert SEO services. We help you rank higher on search engines and drive organic traffic to your website.</p>
+        <ul>
+          <li>Keyword Research</li>
+          <li>On-Page & Off-Page SEO</li>
+          <li>Analytics & Reporting</li>
+        </ul>
+        <a href="#" class="card-button">Learn More</a>
+      </div>
+    </div>
+
+    <!-- App Development Card -->
+    <div class="card">
+      <img src="images/app-dev't.jpeg" alt="App Development" class="card-image">
+      <div class="card-content">
+        <h3>App Development</h3>
+        <p>We build high-performance mobile applications for all platforms. Our apps are scalable, secure, and designed to meet your business needs.</p>
+        <ul>
+          <li>iOS & Android Apps</li>
+          <li>Cross-Platform Development</li>
+          <li>API Integration</li>
+        </ul>
+        <a href="#" class="card-button">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Additional Cards -->
+    <!-- E-Commerce Card -->
+    <div class="card">
+      <img src="images/e-coomerce.jpeg" alt="E-Commerce" class="card-image">
+      <div class="card-content">
+        <h3>E-Commerce Solutions</h3>
+        <p>We develop robust e-commerce platforms to help you sell products and services online. Our solutions are secure, scalable, and easy to manage.</p>
+        <ul>
+          <li>Custom E-Commerce Websites</li>
+          <li>Payment Gateway Integration</li>
+          <li>Inventory Management</li>
+        </ul>
+        <a href="#" class="card-button">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Branding Card -->
+    <div class="card">
+      <img src="images/branding.jpeg" alt="Branding" class="card-image">
+      <div class="card-content">
+        <h3>Branding & Identity</h3>
+        <p>We help you create a strong brand identity that resonates with your audience. From logos to brand guidelines, we’ve got you covered.</p>
+        <ul>
+          <li>Logo Design</li>
+          <li>Brand Strategy</li>
+          <li>Marketing Collaterals</li>
+        </ul>
+        <a href="#" class="card-button">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Digital Marketing Card -->
+    <div class="card">
+      <img src="images/digital-marketing.jpeg" alt="Digital Marketing" class="card-image">
+      <div class="card-content">
+        <h3>Digital Marketing</h3>
+        <p>We provide comprehensive digital marketing services to help you reach your target audience and grow your business online.</p>
+        <ul>
+          <li>Social Media Marketing</li>
+          <li>Email Marketing</li>
+          <li>PPC Advertising</li>
+        </ul>
+        <a href="#" class="card-button">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- About Section -->
+ <section id="about" class="about">
+  <div class="about-content">
+    <h2>About Us</h2>
+    <p>
+      
+      I am a passionate and detail-oriented web developer with a strong focus on building modern, responsive, and user-friendly
+      websites and applications. With expertise in React, JavaScript, Tailwind CSS, and Zustand, I specialize in crafting
+      efficient front-end experiences while ensuring seamless functionality.
+    </p>
+    <p>
+      I have a keen eye for UI/UX design, performance optimization, and scalable architecture. Whether developing from scratch
+      or enhancing existing projects, I strive to write clean, maintainable, and efficient code. My goal is to create fast,
+      interactive, and visually appealing web applications that deliver the best user experience.
+    </p>
+    <p>
+      I am always eager to learn and keep up with the latest industry trends and technologies. Collaboration, problem-solving,
+      and delivering high-quality solutions are at the core of my work. Whether working independently or as part of a team,
+      I am dedicated to bringing creative ideas to life.
+    </p>
+    <p><strong>Let’s build something amazing together!</strong></p>
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>🌐 Frontend Development</li>
+        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+        <li>React.js (Hooks, Context API)</li>
+        <li>Tailwind CSS, Bootstrap, Material UI</li>
+        <li>Zustand, Redux for state management</li>
+        <li>Next.js for server-side rendering (SSR)</li>
+      </ul>
+    </div>
+    <img src="images/background.jpg" alt="About Us Image" class="about-image">
+  </div>
+</section>
+ <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <h2>Our Projects </h2>
+
+    <div class="portfolio-gallery">
+      <!-- Project 1 -->
+      <div class="portfolio-item">
+        <img src="images/weather.jpeg" alt="Weather App">
+        <h3>Weather App</h3>
+        <p>A real-time weather application that provides accurate forecasts based on user location.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-item">
+        <img src="images/library.jpeg" alt="Library Management">
+        <h3>Library Management</h3>
+        <p>A digital library system for managing books, users, and transactions efficiently.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-item">
+        <img src="images/e-comerccce.jpg" alt="E-commerce Website">
+        <h3>E-commerce Website</h3>
+        <p>An online shopping platform with user authentication, cart functionality, and payment integration.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="portfolio-item">
+        <img src="images/task-manager.jpeg" alt="Task Manager">
+        <h3>Task Manager</h3>
+        <p>A productivity tool to manage daily tasks with reminders, categories, and deadlines.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="portfolio-item">
+        <img src="images/portfolio.jpeg" alt="Personal Portfolio">
+        <h3>Personal Portfolio</h3>
+        <p>A modern portfolio website showcasing my skills, projects, and contact information.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="portfolio-item">
+        <img src="images/bloog.jpg" alt="Blog Platform">
+        <h3>Blog Platform</h3>
+        <p>A content management system where users can create, edit, and share blog posts.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Follow Us Section -->
+ <!-- Follow Us Section -->
+ 
+
+<!-- FAQ Section -->
+<section class="faq">
+  <h2>FAQ</h2>
+  <details class="faq-item">
+    <summary class="faq-question">
+      <span>What services do you offer?</span>
+      <i class="fas fa-chevron-down"></i>
+    </summary>
+    <div class="faq-answer">
+      <p>I offer web development, UI/UX design, and portfolio creation services.
+        I provide a range of services including software development, web and mobile app
+         development, UI/UX design, and consulting in modern technologies. Whether you need a 
+         fully functional website, a React-based application, or backend solutions, I ensure high-quality,
+          scalable, and efficient solutions tailored to your needs. Additionally, I offer guidance on integrating state
+           management tools like Zustand, setting up
+         Tailwind CSS, and optimizing workflows for performance and maintainability.
+      </p>
+    </div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-question">
+      <span>How can I contact you?</span>
+      <i class="fas fa-chevron-down"></i>
+    </summary>
+    <div class="faq-answer">
+      <p>You can contact me via the form below or through my social media links.
+        You can reach out via email, phone, or through my social media channels. I am
+         available to discuss project requirements, provide technical guidance, and answer any 
+         queries you may have. If you prefer a more structured conversation, we can schedule a call or a 
+        video meeting to go over your project details in-depth. Feel free to send a message,
+         and I’ll respond as soon as possible.
+      </p>
+    </div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-question">
+      <span>Do you work remotely?</span>
+      <i class="fas fa-chevron-down"></i>
+    </summary>
+    <div class="faq-answer">
+      <p>Yes, I work remotely and can collaborate with clients worldwide.
+        Yes, I work remotely and collaborate with clients from different parts of the world. 
+        With modern communication tools like Zoom, Slack, and email, I ensure smooth and 
+        efficient collaboration. Whether you need real-time updates, weekly progress reports,
+         or direct integration with your team’s workflow, I am flexible in adapting to your 
+         preferred working style. Remote work allows me to stay productive while maintaining a 
+         seamless connection with clients across different time zones.
+      </p>
+    </div>
+  </details>
+</section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+  <section class="social-media">
+    <h2>Follow Us on Social Media</h2>
+    <p>Stay connected with Us for the latest updates and Info!</p>
+    <div class="social-icons">
+      <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Degaga. All rights reserved.</p>
+  </footer>
+ 
+</body>
+</html>
